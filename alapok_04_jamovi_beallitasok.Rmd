@@ -1,0 +1,70 @@
+---
+title: "Jamovi a gyakorlatban"
+author: "**Alapok** 04 - Beállítások"
+date: 'Abari Kálmán'
+output: 
+  ioslides_presentation: 
+    css: css/styles.css
+    widescreen: yes
+    logo: images/header-logo.svg
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Beállítások
+
+
+-   A jamovi személyre szabása
+    - Verziószám
+    - Kicsinyítés-nagyítás
+    - Az eredménypanelen megjelenő számokat formázhatjuk, és külön a p értékeket
+    - A hivatkozások megjelenését engedélyezhetjük vagy tilthatjuk
+    - Syntax mode engedélyezése és tiltása
+    - Ábrák megjelenése
+    - Hiányzó érték jelölése a beolvasásánál 
+    - A nyelv kiválasztása
+    - Developer mode
+
+<div class="notes">
+
+A jamovi működéséi némileg egyénre szabhatjuk. A menüsor végén lévő 3 pont megnyomásával megjelenik egy kis ablak. A legalján egy verziószámot látunk. Ez hasznos információ.
+
+A kicsinyítés-nagyítás funkcióval megtalálhatjuk a számunkra legalkalmasabb betű és ablakméreteket.
+
+Az eredménypanelen megjelenő számokat formázhatjuk, külön a p értékeket. Meghatározhatjuk, hogy hány értékes jegyet tartalmazzon a számunk az egész és tört helyértékeket is beleszámítva, vagy dönthetünk, hogy hány tizedesre kerekítse a számokat a jamovi.
+
+Az eredménypanelen a hivatkozások megjelenését engedélyezhetjük vagy tilthatjuk.    
+
+Syntax mode engedélyezésével lehetőségünk van a megjelenő eredmények alapját képező R parancsokat megjeleníteni. Ahogy említettük, a jamovi alapja az R, illetve a jmv csomag, így az eredménypanel tartalmáért felelős R parancsokat is láthatjuk.
+
+Az eredménypanelen megjelenő ábrák kinézetén tudunk változtatni a téma és a színpaletta segítségével. 
+
+Nyelvet is választhatunk, megtaláljuk a magyart is, a fordítás jelenleg folyamatban van.
+
+A Developer mode bizonyos funkciók végrehajtásához szükséges beállítás, mi ezt nem fogjuk használni.
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

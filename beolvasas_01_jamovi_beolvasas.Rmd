@@ -1,0 +1,41 @@
+---
+title: "Jamovi a gyakorlatban"
+author: "**Beolvasás** 01 - Adatállomány beolvasása"
+date: 'Abari Kálmán'
+output: 
+  ioslides_presentation: 
+    css: css/styles.css
+    widescreen: yes
+    logo: images/header-logo.svg
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Beolvasás
+
+-   Táblázatkezelők saját állományai
+    - Excel `.xlsx`
+    - LibreOffice Calc `.ods`
+-   Statisztikai programcsomagok saját állományai
+    -   SPSS (`.sav`)
+    -   R (`.RData`, `.rds`)
+    -   Egyéb: Stata, SAS, JASP
+-   Tagolt szöveges állományok
+    - `.csv`
+    -  `.txt`
+
+<div class="notes">
+Emlékezzünk vissza, hogy minden statisztika adatelemzés első pontja az adatállomány megnyitása. A jamovi fő koncepciója, hogy az adatelemzés során pontosan egy darab adatállományt használunk. Hogyan is tudjuk ezt a kiszemelt adatállományt beolvasni a jamovi-ba?
+
+Látnunk kell, hogy a jamovi könnyen megbirkózik az adatállományok széles körével. A nyers adataink, az adatgyűjtésünk eredménye, legkényelmesebben táblázatkezelőben tárolható, a jamovi képes Excel és LibreOffice állományok beolvasására. De a népszerű más statisztikai programcsomagok állományait is olvassa, például a az SPSS, R, Stata, SAS vagy JASP saját adatformátumait is.
+
+A legnagyobb átjárhatóságot a különböző platformok között a tagolt szöveges állományok jelentik, ezeket is beolvassa a jamovi. Nagyon intelligens ez a beolvasó algoritmus, vesszővel, pontosvesszővel vagy tabulátorral tagolt állományokkal is elboldogul, a tizedesvessző is lehet pont vagy vessző, és a karakterkódolást is felismeri, de vegyük figyelembe, hogy a legbiztonságosabb, ha UTF-8 kódolásban tároljuk a tagolt szöveges állományainkat.
+
+A beolvasás minden esetben a hamburger menü Open menüpontjával indul, és a Browse funkciót érdemes választani. 
+
+Minden beolvasott adattábla új jamovi ablakot nyit. 
+
+</div>
+

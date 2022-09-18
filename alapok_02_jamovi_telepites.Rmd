@@ -1,0 +1,36 @@
+---
+title: "Jamovi a gyakorlatban"
+author: "**Alapok** 02 - Telepítés"
+date: 'Abari Kálmán'
+output: 
+  ioslides_presentation: 
+    css: css/styles.css
+    widescreen: yes
+    logo: images/header-logo.svg
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Telepítés
+
+-   https://www.jamovi.org/
+
+<div class="notes">
+A jamovi telepítéséhez látogassuk meg a jamovi.org oldalt. Jelenlég két formában használhatjuk a jamovit:
+- a jamovi Cloud
+- a jamovi Desktop változatban.
+
+A két változat mindössze a használati módban tér el, mindkettőben lényegében ugyanazokat lépéseket végezhetjük el, egyszerűen fogalmazva, mindkettő ugyanannyit tud. Mivel jelenleg béta verzióban a van a böngőszőből elérhető, és egyébként telepítést sem igénylő jamovi Cloud, ezért javaslom a jamovi Desktop változat letöltését és használatát. A saját számítógépünkre települ, és lokálisan használhatjuk, pont úgy mint bármilyen más alkalmazást.
+
+A telepítéshez kattintsünk tehát a jamovi Desktop ikonon és a két elérhető verzió közül, mindig a jobb oldalit válasszuk, amely a legfrissebb fejlesztéseket tartalmazza. A jamovi oldala automatikusan megállapítja az operációs rendszerünk típusát, így a gombon kattintva a megfelelő verzió telepítőjének letöltését kezdeményezhetjük. 
+
+Lentebb láthatjuk, hogy más platformokra is letölthető a jamovi telepítője.
+
+A letöltött telepítőt futtatjuk, és néhány "Next" gombon kattintva feltelepül számtógépünkre a jamovi.
+
+A telepítés során felajánlja, hogy az előző verzióját a jamovinak, amennyiben talál ilyet a gépükön, leszedheti-e, és csak utána telepíti az új verziót. Mindig éljünk ezzel a lehetőséggel.
+
+
+</div>

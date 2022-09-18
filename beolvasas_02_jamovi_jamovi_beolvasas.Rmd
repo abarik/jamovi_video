@@ -1,0 +1,50 @@
+---
+title: "Jamovi a gyakorlatban"
+author: "**Beolvasás** 02 - Jamovi állomány beolvasása"
+date: 'Abari Kálmán'
+output: 
+  ioslides_presentation: 
+    css: css/styles.css
+    widescreen: yes
+    logo: images/header-logo.svg
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Beolvasás
+
+-   A jamovi saját állományai
+    - jamovi állomány `.omv`
+      - adattábla
+      - utasítások
+      - eredmények
+    - jamovi template állomány `.omt`
+      - utasítások
+
+<div class="notes">
+Ha már beolvastuk az elemzendő adattálományt, és ezzel elkezdtünk dolgozni, akkor természetesen menteni is szeretnénk a munkánkat. A munkánkat a jamovi saját formátumú állományába, egy omv kiterjesztésű állományban mentjük el. 
+
+A jamovi egyik legnagyszerűbb tulajdonsága a saját formátumú omv állományának a szerkezete. Három dolog is mentésre kerül: az adattábla, amivel végig dolgozunk, az összes eddig elvégzett tevékenységünk, nevezzük ezeket utasításoknak, és az elemzések eredménye. Az elemzések is az utasításaink közé tartoznak, de nem minden utasítás elemző parancs, gondoljunk csak egy változó átnevezésre vagy egy transzfromációra.
+
+Amennyiben csak az utasításokat szeretnénk elmenteni, akkor a jamovi template állományt válasszuk, ha azt feltöltjük adatokkal, akkor azokon az összes utasítás automatikusan végrehajtódik majd, és máris kész eredményhez juthatunk.
+
+Nézzünk erre egy példát. Elindítjuk a jamovi-t. Minden munka adatállomány beolvasásával indul. Egy viszonylag kis adatbázissal kezdünk, mely összesen 10 sort, 10 személy adatát tartalmazza.
+Látjuk, hogy szükség van néhány előkészítő utasításra, ezek az oszlopok nevének átnevezése, az oszloptípusok helyes beállítása, valamint végzünk nagyon egyszerű elemzési műveleteket is.
+
+Amikor elmentjük a munkánkat omv fájlban mentjük el. Ez mindhárom részét elmenti az állománynak, és később tudjuk folytatni a munkát. Ha kilépünk, újra megnyithatjuk az állományt.
+
+Azonban arra is lehetőségünk van, hogy Exportáljunk egy template állományt. Ez csak az utasításokat fogja tartalmazni.
+
+Amennyiben beolvasunk egy ilyen template állományt, akkor látjuk, hogy az adatpanel üres, és az eredmény panelen sem látunk eredményt, csak a helyüket látjuk. Kattintva rajtuk az utasítások természetesen megjelennek, hisz épp ez a template tartalma.
+
+Amennyiben adatokat töltünk be, a hamburger menü Special Import segítségével, akkor a template megtelik élettel. Lesz adattpanel és látjuk az eredményeket is. Fontos feltétel volt, hogy a betöltött adatállomány változószerkezete a pontos változónevekkel együtt megegyezzen azzal, amivel elkezdtük a munkát korábban.
+
+
+
+
+
+
+</div>
+

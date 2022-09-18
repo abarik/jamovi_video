@@ -1,0 +1,57 @@
+---
+title: "Jamovi a gyakorlatban"
+author: "**Alapok** 03 - Használat"
+date: 'Abari Kálmán'
+output: 
+  ioslides_presentation: 
+    css: css/styles.css
+    widescreen: yes
+    logo: images/header-logo.svg
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Használat
+
+-   A jamovi indítása
+-   Munka a jamovi-ban
+    - Adatok beolvasása
+    - Adatok előkészítése elemzésre
+    - Adatok elemzése
+    - Eredmények publikációja
+
+<div class="notes">
+
+A jamovi sikeres telepítése után elindíthatjuk a saját számítógépünkről a jamovi-t.
+
+Egy rendkívül könnyen kezelhető, jól átlátható grafikus felhasználói felület fogad minket. Itt elvégezhetünk minden olyan tevékenységet, amely az adatelemzéshez kapcsolódik.
+ 
+Mint minden tipikus ablakos alkalmazásnak, a jamovi-nak is van feléce, van menüsora. A menüsor a hamburgermenüt is tartalmazza, amely lényegében a Fájl menünek felel meg, itt végezhetjük az állománykezelő műveleteket, a menüsor végén van két gomb: az első a munkaterület átméretezésért felelős, a másik a jamovi beállításait tartalmazza.
+A munkaterületet mi magunk is átméretezhetjük, a függőleges vonal mozgatásával. Most két panelt látunk, de a munka során valójában 3 panelünk lesz, két függőleges elválasztó vonallal.
+A menüsor alatt ikonokat láthatunk, azokon kattintva újabb menüpontok érhetők el.
+
+Az utolsó sor a státuszsor, itt mindenfajta információt közöl velünk a jamovi.
+
+A tipikus munka a jamovi-ban követi az adatelemzés szokásos lépéseit:
+    - Adatok beolvasása
+    - Adatok előkészítése elemzésre
+    - Adatok elemzése
+    - Eredmények publikációja
+
+A példa kedvéért nyissunk meg egy Excel állományt, amely egy Google Űrlapról származó, nyers adatokat tartalmaz.
+
+Látjuk, hogy az adatok elemzése előtt számos műveletet el kell végeznünk, így a beolvasás után a 2. lépésünk az előkészítés lesz. 
+
+A példa kedvéért válasszuk a Családi állapot változót, amely egy nominális változó. 
+Nevezzük át a változót és ellenőrizzük le, hogy valóban nominálisként tekint rá a jamovi.
+
+A másik változó az életkor, nevezzük át, és ellenőrizzük a változót. 
+Látunk két olyan értéket, amelyeket át kell alakítanunk. Használjuk a kényelmes transzformációt, mint lehetőséget. 
+
+Az előkészítés után a 3. lépés az elemzés, válasszuk ki a két változót a leíró statisztikai elemzéshez. Mutatókat és gyakorisági táblázatot látunk. 
+
+A 4. lépés a publikálás, itt például válszthatjuk a teljes elemzés vágóasztalra helyezését és beillesztését egy szövegszerkesztőbe.
+</div>
+

@@ -1,0 +1,42 @@
+---
+title: "Jamovi a gyakorlatban"
+author: "**Beolvasás** 03 - Speciális import"
+date: 'Abari Kálmán'
+output: 
+  ioslides_presentation: 
+    css: css/styles.css
+    widescreen: yes
+    logo: images/header-logo.svg
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Beolvasás
+
+-   Speciális import
+    - jamovi állományba `.omv` vagy
+      - törli az összes adatot
+      - figyeli az egyezést a meglővő oszlopokkal
+    - jamovi template állományba `.omt`
+
+<div class="notes">
+
+A speciális import során adatállományokat tudunk betölteni már létező omv állományba vagy az üres template állományokba. A meglévő adatok, ha vannak, törlődnek, és egyező oszlopnév esetén a megfelelő oszlopba töltődnek az adatok.
+Próbáljuk ki a 10 soros omv állománnyal. Valóban törlődik mind a 10 sor és helyét átveszi a teljes adatállomány.
+Lehetőségünk van visszatölteni a 10 sorost is. Amennyiben olyan állományt töltünk be, amely nem, vagy csak részben egyező változóstruktúrával rendelkezik akkor új oszlopokat is kaphatunk.
+
+Ezt kipróbálhatjuk ugyanígy a template állományokkal is.
+
+Még egy fontos dolog. A számított, átkódolt, transzformált mezők nem számítanak bele a változókba az összehasonlítások során.
+Ha például a testmagasságot átváltom a méterre, akkor az ilyen oszlopot nem tartalmazó adatállományokat minden további nélkül beolvashatunk és a transzformáció automatikusan végrehajtódik.
+
+
+
+
+
+
+
+</div>
+

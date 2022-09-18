@@ -1,0 +1,36 @@
+---
+title: "Jamovi a gyakorlatban"
+author: "**Előkészítés** 01 - Változók kezelése"
+date: 'Abari Kálmán'
+output: 
+  ioslides_presentation: 
+    css: css/styles.css
+    widescreen: yes
+    logo: images/header-logo.svg
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Változók
+
+-   Változók kezelése
+    - Átnevezés
+    - Skála beállítása
+      -   Nominális esetben szintek átnevezése
+      -   Ordinális esetben pluszban a szintek sorrendje
+    - Megjegyzések
+    - Változók törlése és beszúrása
+    - Változók kézi kitöltése (vágóasztal műveletek)
+
+<div class="notes">
+
+A jamovi könnyen megbirkózik az adatállományok széles körével. A nyers adataink, az adatgyűjtésünk eredménye, legkényelmesebben táblázatkezelőben tárolható, a jamovi képes Excel és LibreOffice állományok beolvasására. De a népszerű más statisztikai programcsomagok állományait is olvassa, például a az SPSS, R, Stat, SAS vagy JASP saját adatformátumait is.
+A legnagyobb átjárhatóságot a különböző platformok között a tagolt szöveges állományok jelentik, ezeket is beolvassa a jamivi. Nagyon intelligens ez a beolvasó algoritmus, vesszővel, pontosvesszővel vagy tabulátorral tagolt állományokkal is elboldolgul és a tizedevessző is lehet pont vagy vessző, és a karakterkódolást is felismeri, de vegyük figyelembe, hogy a legbiztonságosabb, ha UTF-8 kodálásban tároljuk a tagolt szöveges állományainkat.
+
+A beolvasás minden esetben a hamburger menü Open menüpontjával indul, és a Browse funkciót érdemes választani. 
+Minden beolvasott adattábla új jamovi ablakot nyit. 
+
+</div>
+

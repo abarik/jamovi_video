@@ -1,0 +1,34 @@
+---
+title: "Jamovi a gyakorlatban"
+author: "**Alapok** 01 - Bevezetés"
+date: 'Abari Kálmán'
+output: 
+  ioslides_presentation: 
+    css: css/styles.css
+    widescreen: yes
+    logo: images/header-logo.svg
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Mi a jamovi?
+
+-   Eszköz adatok elemzésére
+-   Alternatívái: R, SPSS, JASP, PSPP stb.
+-   Főbb tulajdonságai:
+    - ingyenes, nyílt forráskódú szoftver, 
+    - többplatformos (Windows, Linux és macOS)
+    - grafikus felhasználói felület (GUI)
+    - az R-en alapul
+
+<div class="notes">
+A jamovi egy statisztikai programcsomag, célja az adatelemzési problémáink megoldása.
+Számos alternatívája létezik, R, SPSS, JASP, PSPP stb.
+Mely tulajdonságok emelik ki a többi statisztikai programcsomag közül:
+- ingyenes, nyílt forráskódú szoftver, 
+- elérhető Windows, Linux és macOS környezetben is, 
+- valamint az R statisztikai programcsomagra épül, amit azonban teljesen elfed a grafikus felhasználói felület. A kényelmes GUI rendkívüli módon leegyszerűsíti a program használatát. Lényegében kattintásokkal kommunikálunk a jamovi-val és így végezzük a statisztikai adatelemzést.
+</div>
+

@@ -1,0 +1,52 @@
+---
+title: "Jamovi a gyakorlatban"
+author: "**Alapok** 05 - Modulok"
+date: 'Abari Kálmán'
+output: 
+  ioslides_presentation: 
+    css: css/styles.css
+    widescreen: yes
+    logo: images/header-logo.svg
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Modulok
+
+
+-   A jamovi előnyei
+    - ingyenes, nyílt forráskódú, többplatformos
+    - egyszerű használat
+-   A jamovi hátrányai
+    - lassú
+    - eljárások korlátozott köre
+- Modul
+    - célja: a jamovi tudásának bővítése
+
+<div class="notes">
+
+A jamovi előnyeit talán kezdjük érzeni, ingyenes, többplatformos, kattintgatós alkalmazás a statisztikai adatelemzéshez.
+
+A hátrányairól eddig nagyvonalúan hallgattunk:
+- bizonyos esetekben lassúnak érezhetjük, indításkor vagy bizonyos számítások elvégzése során
+- a másik hátrány a grafikus felhasználói felületből következik, ez pedig az, hogy az elvégezhető statisztikai eljárások köre korlátozott, csak olyan számításokat végezhetünk, amelyek a menüből elérhetők.
+
+Ezen próbál enyhíteni a jamovi modul fogalma, vagyis az a lehetőség, hogy bárki készíthet jamovi modult, és azt elérhetővé teheti mindenki számára. Ezzel kibővítheti az alap jamovi tudását, tágul a jamovi-val elvégezhető műveletek száma.
+
+A jelenleg elérhető modulok a jobb oldali plusz jellel listázhatók.
+Nagyon sok modul elérhető, átlapozhatjuk a listát. 
+
+Ha például a u-próbát szeretnénk végrehajtani a jamovi-val, akkor láthatjuk az alap jamovi azt nem támogatja, de a keresőbe beírhatjuk a z-test kifejezést, ami az u-próbát jelenti. Telepíthetjük ezt a modult. Megjelenik egy új ikon, lebillentjük és kiválasztjuk belőle a z-test-et. 
+Látjuk ez nem használja az adattáblánkat, de ha kitöltjük a megfelelő mezőket, akkor az eredménypanelen megjelenik a teszt eredménye.
+
+Vannak olyan modulok, amelyek meglévő menüpontokat látnak el új fukcionalitással. Példál a moreTest új normalitás és homegenitásvizsgálatot ad az alap jamovi t-próbáihoz, vagy ANOVA eljárásaihoz.
+A jPower csomaggal a próbáink statisztikai erejével kapcsolatos vizsgálatokat végezhetünk el. Az erő, a hatás nagysága, az elemszám és a szignifikancia szint közötti összefüggéseket tárhatjuk fel.
+
+A lineáris modellnél összetettebb ún. általánosított lineáris modellt vizsgálhatunk a gamjl modul segítségével.
+
+A telepített modulokat leszedhetjük, ha már túl sokan vannak, illetve bármikor újratelepeíthetjük őket.
+
+</div>
+
