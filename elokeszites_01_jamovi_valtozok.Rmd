@@ -13,24 +13,62 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+
+
+## Az adatelemzés lépései (ismétlés)
+
+- Adatok beolvasása
+- **Adatok előkészítése elemzésre**
+    - Változók kezelése
+    - Változók transzformációja
+    - Sorok kezelése és szűrése
+    
+- Adatok elemzése
+- Eredmények publikációja
+
+
 ## Változók kezelése
 
 -   Változók kezelése
-    - Átnevezés
-    - Skála beállítása
-      -   Nominális esetben szintek átnevezése
-      -   Ordinális esetben pluszban a szintek sorrendje
-    - Megjegyzések
-    - Változók törlése és beszúrása
-    - Változók kézi kitöltése (vágóasztal műveletek)
+    -   Változók kézi kitöltése (vágóasztal műveletek is)
+    -   Átnevezés
+    -   Skála beállítása
+        -   Nominális esetben szintek átnevezése
+        -   Ordinális esetben pluszban a szintek sorrendje
+    -   Megjegyzések
+    -   Változók törlése és beszúrása
 
-<div class="notes">
 
-A jamovi könnyen megbirkózik az adatállományok széles körével. A nyers adataink, az adatgyűjtésünk eredménye, legkényelmesebben táblázatkezelőben tárolható, a jamovi képes Excel és LibreOffice állományok beolvasására. De a népszerű más statisztikai programcsomagok állományait is olvassa, például a az SPSS, R, Stat, SAS vagy JASP saját adatformátumait is.
-A legnagyobb átjárhatóságot a különböző platformok között a tagolt szöveges állományok jelentik, ezeket is beolvassa a jamivi. Nagyon intelligens ez a beolvasó algoritmus, vesszővel, pontosvesszővel vagy tabulátorral tagolt állományokkal is elboldolgul és a tizedevessző is lehet pont vagy vessző, és a karakterkódolást is felismeri, de vegyük figyelembe, hogy a legbiztonságosabb, ha UTF-8 kodálásban tároljuk a tagolt szöveges állományainkat.
+## Skálák és a jamovi
 
-A beolvasás minden esetben a hamburger menü Open menüpontjával indul, és a Browse funkciót érdemes választani. 
-Minden beolvasott adattábla új jamovi ablakot nyit. 
+| Statisztikai skála | Jamovi skála  | Jamovi adattípus |
+|--------------------|---------------|------------------|
+| nominális          | Nominal       | Text, Integer    |
+| ordinális          | Ordinal       | Text, Integer    |
+| intervallum        | Continuous    | Integer, Decimal |
+| arány              | Continuous    | Integer, Decimal |
+|                    |               |                  |
 
-</div>
 
+
+
+::: notes
+Ha újra áttekintjük az adatelemzés szokásos 4 lépését, akkor azt mondhatjuk, hogy a jamoviba bevihetünk adatokat kézzel, beolvashatunk vagy importálhatunk adatokat, definiálhatunk változókat, transzformált változókat hozhatunk létre és végül szűrhetjük a sorokat. Nagyjából ezt jelenti az adatfeldolgozás fogalma, amely egyben a statisztikai adatelemzés első két lépése.
+
+A jamovi indítása után akár magunk is begépelhetjük az adatokat, vagy a vágóasztal segítségével is átemelhetünk ide adatokat. Soha ne tegyük ezt, mindig külső adatállományból, lehetőleg Excel állományból olvassuk be az adatokat. Ezt láttuk már korábban, az adatok beolvasása részben.
+
+Mielőtt azonban az adatok elemzését elkezdjük, az adatok előkészítését is el kell végeznünk. Ennek első lépése a változók áttekintése, kezelése.
+
+Kezdjük el a most beolvasott kérdőív oszlopainak az átnevezését. Mindig ékezet és szóköz nélküli, esetlegesen aláhúzást tartalmazó változóneveket használjunk.
+
+Határozzuk meg minden változó esetében a statisztikai skálát, és állítsuk be jamoviban az ennek megfelelő változó skálát és adattípust.
+
+Nominális és ordinális változók esetén érdekes lehet a szintek átnevezése és főképp ordinális esetben szintek sorrendje is.
+
+Lássuk el minél több információval a változóinkat, a leírás mezőt lehetőleg töltsük ki.
+
+A szükségtelen változókat törölhetjük, de mindig legyünk óvatosak. Ilyenkor érdemes az OMV állományból egy új példányt létrehozni.
+
+Új változót is hozzáadhatunk, ekkor kitöltéséről nekünk, kézzel kell gondoskodnunk.
+
+:::

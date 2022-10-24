@@ -46,7 +46,7 @@ A jPower csomaggal a próbáink statisztikai erejével kapcsolatos vizsgálatoka
 
 A lineáris modellnél összetettebb ún. általánosított lineáris modellt vizsgálhatunk a gamjl modul segítségével.
 
-A telepített modulokat leszedhetjük, ha már túl sokan vannak, illetve bármikor újratelepeíthetjük őket.
+A telepített modulokat leszedhetjük, ha már túl sokan vannak, illetve bármikor újratelepíthetjük őket.
 
 </div>
 

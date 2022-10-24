@@ -1,0 +1,85 @@
+---
+title: "Jamovi a gyakorlatban"
+author: "**Előkészítés** 01 - Változók kezelése"
+date: 'Abari Kálmán'
+output: 
+  ioslides_presentation: 
+    css: css/styles.css
+    widescreen: yes
+    logo: images/header-logo.svg
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Az adatelemzés lépései (ismétlés)
+
+- Adatok beolvasása
+- **Adatok előkészítése elemzésre**
+    - Változók kezelése
+    - Változók transzformációja
+    - Sorok kezelése és szűrése
+    
+- Adatok elemzése
+- Eredmények publikációja
+
+
+## Változók transzformációja
+
+A jamovi 2 formában támogatja:
+
+- kiszámított változó (Computed variable)
+    - több változón alapulhat
+- transzformált változó (Transformed variable)
+    - egy változón alapul (`$source`)
+    - kényelmes ismétlődő transzformáció esetén
+
+
+## Transzformáció
+
+-   Célja új változó készítése
+
+-   Formái
+
+    -   Konstan érték
+    -   Kifejezés: konstansok és operátorok
+    -   Kifejezés: fentiek + változók
+    -   Kifejezés: fentiek + jamovi függvények
+
+## Matematikai függvények - egy értékből egy érték {.smaller}
+
+| Függvény          | Leírás                                                |
+|-------------------|-------------------------------------------------------|
+| `ABS(n)`          | Abszolút érték                                        |
+| `EXP(n)`          | Exponenciális érték                                   |
+| `LN(n)`           | Természetes alapú logaritmus                          |
+| `LOG10(n)`        | 10-es alapú logaritmus                                |
+| `SQRT(n)`         | Négyzetgyök                                           |
+| `ROUND(n,digits)` | Kerekítés `digits` számú tizedesre                    |
+| `FLOOR(n)`        | A legnagyobb egész, amely kisebb vagy egyenlő `n`-nel |
+| `CEILING(n)`      | A legkisebb egész, amely nagyobb vagy egyenlő `n`-nel |
+| `INT(n)`          | Konvertálás egész számmá                              |
+| `VALUE(n)`        | Számmá konvertálja a szöveget (ha lehetséges)         |
+
+::: notes
+Ha túl vagyunk az adatállomány beolvasásán és az első előkészítő lépésen, a változók alapvető kezelésén, akkor változók transzformációja következik.
+
+Látjuk, hogy az előző lépésben, a változók kezelése során, kérdőívünk minden változóját helyesen átneveztünk, a statisztikai skála és a jamovi skála egyezik.
+
+Ezt a "Variables" menüpontban is szemlélhetjük, a változók kényelmes áttekintésére és kezelésére itt is lehetőségünk van.
+
+Valójában azonban számos kérdés nyitva van még, emlékezzünk az életkor, a nem vagy az iskolai végzettség változóra.
+
+A megoldás ezekre a problémákra furcsa mód, új változó beszúrása lesz, de nem az előző részben látott módon, amikor mi magunk töltjük fel a változót kézzel, hanem az új váltózó értékeit kiszámoltatjuk a jamovival.
+
+Ahhoz, hogy ezt könnyebben átlássuk, egy kisebb adatbázissal kezdjük. A kerdoiv_1_10_01.omv-t nyitjuk meg.
+
+Látjuk, ez az állomány túl van a változók kezlésén, a változónevek rendben vannak, és a skálák is egyeznek.
+
+Ha új változóz szeretnénk beszúrni, akkor valójában 3 megoldásunk van
+
+
+
+
+:::
